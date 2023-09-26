@@ -1,5 +1,5 @@
 # write a function that gives the user options. if the user chooses to exit, then exit
-def option():
+def option(user):
   # boolean to control loop
   exit = False
   
@@ -8,19 +8,19 @@ def option():
 
   # loop to provide menu to user; for now, this will print what the user enters (if it's a valid option)
   while (exit==False):
-    print("Options:\n1.) Make a purchase\n2.) Speak with a representative\n3.) Apply for a position with Company X\n4.) Exit")
+    print("Please choose from these options:\n1.) Make a purchase\n2.) Speak with a representative\n3.) Apply for a position with Company X\n4.) Exit")
     userInput = input("How would you like to continue this conversation? >>> ")
     if (userInput=="1"):
       exit=True
-      print("1")
+      print("Option 1")
     elif (userInput=="2"):
-      print("2")
+      print("Option 2")
       exit=True
     elif (userInput=="3"):
-      print("3")
+      print("Option 3")
       exit=True
     elif (userInput=="4"):
-      print("4")
+      print("Goodbye, " + user + "!")
       exit=True
     else:
       continue
@@ -36,5 +36,8 @@ userAge=0;
 userName = input("What's your name? >>> ")
 userAge = input("What's your age? >>> ")
 
+#an appropriate response 
+print("A pleasure to meet you, " + userName + "! How can I help you today?\n")
+
 # call the function to prompt the user on how to continue their conversation with the chatbot
-option()
+option(userName)
