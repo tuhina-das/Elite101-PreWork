@@ -30,7 +30,7 @@ print("Welcome! I am Company X's chatbot, at your service.")
 
 # instantiate variables to store the user's name and age
 userName = ""
-userAge=0;
+userAge=10;
 
 # prompt the user for their name and age. update variables with their input.
 userName = input("What's your name? >>> ")
